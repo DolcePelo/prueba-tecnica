@@ -1,7 +1,9 @@
 import data from "../data/ejercicio2.json";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from "react";
 
 function Ejercicio2() {
+    const [verDatos, setVerDatos] = useState(false);
     const { clientes, pedidos, productos, detallePedidos } = data;
 
     function calcularTotalPorCliente() {
@@ -32,7 +34,7 @@ function Ejercicio2() {
 
         return resultado;
     }
-    
+
     const resultado = calcularTotalPorCliente();
 
     return (
@@ -46,6 +48,30 @@ function Ejercicio2() {
                     </li>
                 ))}
             </ul>
+
+            <button className="btn btn-outline-secondary mb-3" onClick={() => setVerDatos(!verDatos)}>
+                {verDatos ? "Ocultar Datos" : "Ver Datos"}
+            </button>
+
+            {verDatos && (
+                <div className="accordion" id="accordionDatos">
+                    <div className="accordion-item">
+                        <h2 className="accordion-header">
+                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDatos" aria-expanded="true">
+                                Datos del ejercicio
+                            </button>
+                        </h2>
+                        <div id="collapseDatos" className="accordion-collapse collapse show">
+                            <div className="accordion-body">
+                                <pre className="bg-light p-3 rounded small border">
+                                    {JSON.stringify(data, null, 2)}
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
         </div>
     );
 }
