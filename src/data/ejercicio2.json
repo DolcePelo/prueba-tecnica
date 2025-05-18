@@ -1,0 +1,102 @@
+{
+    "clientes": [
+        {
+            "id": 1,
+            "nombre": "Juan"
+        },
+        {
+            "id": 2,
+            "nombre": "Ana"
+        },
+        {
+            "id": 3,
+            "nombre": "Carlos"
+        },
+        {
+            "id": 4,
+            "nombre": "Lucía"
+        }
+    ],
+    "pedidos": [
+        {
+            "id": 1,
+            "cliente_id": 1
+        },
+        {
+            "id": 2,
+            "cliente_id": 1
+        },
+        {
+            "id": 3,
+            "cliente_id": 2
+        },
+        {
+            "id": 4,
+            "cliente_id": 3
+        },
+        {
+            "id": 5,
+            "cliente_id": 4
+        }
+    ],
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Zapatilla",
+            "precio": 10000
+        },
+        {
+            "id": 2,
+            "nombre": "Remera",
+            "precio": 5000
+        },
+        {
+            "id": 3,
+            "nombre": "Gorra",
+            "precio": 3000
+        },
+        {
+            "id": 4,
+            "nombre": "Campera",
+            "precio": 20000
+        }
+    ],
+    "detallePedidos": [
+        {
+            "id": 1,
+            "pedido_id": 1,
+            "producto_id": 1,
+            "cantidad": 2
+        },
+        {
+            "id": 2,
+            "pedido_id": 2,
+            "producto_id": 2,
+            "cantidad": 1
+        },
+        {
+            "id": 3,
+            "pedido_id": 3,
+            "producto_id": 2,
+            "cantidad": 3
+        },
+        {
+            "id": 4,
+            "pedido_id": 4,
+            "producto_id": 4,
+            "cantidad": 1
+        },
+        {
+            "id": 5,
+            "pedido_id": 5,
+            "producto_id": 3,
+            "cantidad": 4
+        },
+        {
+            "id": 6,
+            "pedido_id": 5,
+            "producto_id": 2,
+            "cantidad": 2
+        }
+    ]
+}

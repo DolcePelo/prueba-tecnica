@@ -1,0 +1,29 @@
+{
+    "ventas": [
+        {
+            "fecha": "2024-01-01",
+            "producto_id": 1,
+            "cantidad": 2
+        },
+        {
+            "fecha": "2024-01-02",
+            "producto_id": 2,
+            "cantidad": 5
+        },
+        {
+            "fecha": "2024-01-03",
+            "producto_id": 1,
+            "cantidad": 3
+        },
+        {
+            "fecha": "2024-01-04",
+            "producto_id": 3,
+            "cantidad": 7
+        },
+        {
+            "fecha": "2024-01-05",
+            "producto_id": 2,
+            "cantidad": 4
+        }
+    ]
+}
